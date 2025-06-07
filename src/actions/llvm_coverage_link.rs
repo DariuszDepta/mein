@@ -18,6 +18,6 @@ pub fn print() {
                 .nl()
                 .cprintln();
         }
-        Err(reason) => println!("Error getting current directory: {reason}"),
+        Err(reason) => eprintln!("Error getting current directory: {reason}"),
     }
 }
