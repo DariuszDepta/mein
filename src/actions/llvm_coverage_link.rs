@@ -5,10 +5,10 @@ pub fn print() {
     match env::current_dir() {
         Ok(path) => {
             Text::new(ColorMode::On)
-                .green()
+                .yellow()
                 .bold()
                 .nl()
-                .s("Open coverage report")
+                .s("Open code coverage report")
                 .colon()
                 .space()
                 .clear()
