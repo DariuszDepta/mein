@@ -1,7 +1,7 @@
 use std::env;
 
 const ARG_NOTES_AT_FUTURE_ME: &str = "notes@FutureMe";
-const ARG_LLVM_COVERAGE_LINK: &str = "llvmCoverageLink";
+const ARG_LLVM_COVERAGE_LINK: &str = "llvmCodeCoverageReportLink";
 
 pub enum Action {
     Help,
