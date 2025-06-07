@@ -13,3 +13,6 @@ edition = "2024"
 [[bin]]
 name = "my"
 path = "src/main.rs"
+
+[dependencies]
+antex = "0.0.8"

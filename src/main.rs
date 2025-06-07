@@ -3,7 +3,6 @@
 mod actions;
 mod cli;
 
-use actions::*;
 use cli::*;
 
 fn main() {
@@ -11,6 +10,7 @@ fn main() {
         Action::Help => {
             println!("printing help")
         }
-        Action::NotesAtFutureMe => action_notes_at_future_me::print(),
+        Action::NotesAtFutureMe => actions::notes_at_future_me::print(),
+        Action::LlvmCoverageLink => actions::llvm_coverage_link::print(),
     }
 }
