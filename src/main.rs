@@ -6,6 +6,7 @@ mod cli;
 use cli::*;
 
 fn main() {
+    println!("{:?}", std::env::args().collect::<Vec<String>>());
     match get_action() {
         Action::Help => {
             println!("printing help")
