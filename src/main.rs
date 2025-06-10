@@ -6,11 +6,11 @@ mod cli;
 use cli::*;
 
 fn main() {
-    match get_action() {
-        Action::Help => {
-            println!("printing help")
-        }
-        Action::NotesAtFutureMe => actions::notes_at_future_me::print(),
-        Action::LlvmCoverageLink => actions::llvm_coverage_link::print(),
+  match get_action() {
+    Action::Help => {
+      println!("printing help")
     }
+    Action::NotesAtFutureMe => actions::notes_at_future_me::print(),
+    Action::LlvmCoverageLink => actions::llvm_coverage_link::print(),
+  }
 }

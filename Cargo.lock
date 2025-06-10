@@ -10,7 +10,7 @@ checksum = "57faad97edd36653b69c9cdab776883a3dd9051720572dc9f7cf6de550008d37"
 
 [[package]]
 name = "mein"
-version = "0.0.9"
+version = "0.0.10"
 dependencies = [
  "antex",
 ]
