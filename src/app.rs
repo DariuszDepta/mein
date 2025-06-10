@@ -1,12 +1,10 @@
-//! # Mein Schweizer Taschenmesser
+//! # Application implementation
 
-mod actions;
-mod cli;
+use crate::actions;
+use crate::cli::*;
 
-use cli::*;
-
-fn main() {
-  match get_action() {
+pub fn run(args: Vec<String>) {
+  match get_action(args) {
     Action::Help => {
       println!("printing help")
     }

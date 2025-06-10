@@ -42,6 +42,11 @@ tasks:
     cmds:
       - cmd: cargo +nightly fmt
 
+  run-my-llvmCodeCoverageReportLink:
+    desc: Runs standalone binary
+    cmds:
+      - cmd: cargo +stable run --bin my llvmCodeCoverageReportLink
+
   test:
     desc: Runs tests in debug mode
     cmds:
